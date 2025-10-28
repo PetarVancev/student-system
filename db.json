@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Petar Vanchev",
+      "email": "pvancev@example.com",
+      "dateOfBirth": "2002-03-14",
+      "courses": ["Math", "Physics"],
+      "studyProgramme": "Computer Science"
+    },
+    {
+      "id": 2,
+      "name": "Janez Novak",
+      "email": "janez@example.com",
+      "dateOfBirth": "2003-09-10",
+      "courses": ["Biology"],
+      "studyProgramme": "Biology"
+    }
+  ]
+}
