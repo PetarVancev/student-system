@@ -1,0 +1,100 @@
+th {
+  background-color: #6c5d6c !important;
+  color: white !important;
+}
+
+:host ::ng-deep .p-datatable-table {
+  border-collapse: separate !important;
+  border-spacing: 0 20px;
+}
+
+:host ::ng-deep .p-datatable-tbody > tr {
+  font-size: 1.1rem;
+  color: #6c5d6c;
+  border: none;
+}
+
+:host ::ng-deep .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+:host ::ng-deep .p-datatable-tbody > tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+:host ::ng-deep p-sorticon svg {
+  color: white;
+}
+
+:host
+  ::ng-deep
+  .p-datatable-sortable-column:not(.p-datatable-column-sorted):hover
+  .p-datatable-sort-icon {
+  color: white !important;
+}
+
+:host ::ng-deep .p-datatable-thead > tr > th.p-datatable-column-sorted .p-datatable-sort-icon {
+  color: white !important;
+}
+
+:host ::ng-deep .custom-action-btn {
+  background-color: #f6f5f6;
+  color: #6c5d6c;
+}
+
+// PAGINATION
+
+::ng-deep .p-paginator {
+  justify-content: flex-end !important;
+}
+
+:host ::ng-deep .p-paginator {
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+:host ::ng-deep .p-paginator-current {
+  font-size: 1.1rem;
+  color: #6c5d6c !important;
+  order: -1 !important;
+  margin-right: auto !important;
+}
+
+:host ::ng-deep .p-paginator-rpp-dropdown {
+  order: -1;
+  margin-right: 1rem;
+}
+
+:host ::ng-deep .p-paginator-page-selected {
+  background-color: #f6f5f6 !important;
+  color: #6c5d6c;
+}
+
+:host ::ng-deep .p-select-option.p-select-option-selected {
+  background-color: #f6f5f6 !important;
+  color: #6c5d6c;
+}
+
+::ng-deep .custom-table .p-paginator-prev .p-paginator-icon:before {
+  content: '< Prev';
+  font-weight: 500;
+  font-size: 14px;
+}
+
+::ng-deep .custom-table .p-paginator-next .p-paginator-icon:before {
+  content: 'Next >';
+  font-weight: 500;
+  font-size: 14px;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-prev::after {
+  content: 'Prev';
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-next::after {
+  content: 'Next';
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+}
