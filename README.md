@@ -54,3 +54,4 @@ npm run build
 
 - The project uses concurrently to run the backend and frontend together for easy development.
 - Make sure no other process is using ports 3000 or 4200.
+- Important: Newly added students will have automatically generated string IDs instead of numeric ones. This is the default behavior of json-server (v1+).
