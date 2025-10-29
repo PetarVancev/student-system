@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+label {
+  display: inline-block;
+  min-width: 130px;
+}
+
+p-select {
+  min-width: 130px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+:host ::ng-deep .p-card-body {
+  align-items: center;
+}
+
+p-card {
+  width: 600px;
+  h2 {
+    text-align: center;
+  }
+}
+
+.form-actions {
+  text-align: center;
+}

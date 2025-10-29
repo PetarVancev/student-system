@@ -3,3 +3,18 @@
 body {
   background-color: #f5f6fa;
 }
+
+p-menubar {
+  background-color: #6c5d6c !important;
+
+  .p-menubar-item-content:hover .p-menubar-item-icon {
+    color: gray !important;
+  }
+
+  .p-menubar-item-content {
+    color: white;
+    .p-menubar-item-icon {
+      color: white !important;
+    }
+  }
+}

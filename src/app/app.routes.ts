@@ -6,6 +6,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/overview/overview.component').then((m) => m.OverviewComponent),
   },
+  {
+    path: 'add',
+    loadComponent: () =>
+      import('./pages/student-form/student-form.component').then((m) => m.StudentFormComponent),
+  },
   { path: '', redirectTo: 'overview', pathMatch: 'full' },
   { path: '**', redirectTo: 'overview' },
 ];

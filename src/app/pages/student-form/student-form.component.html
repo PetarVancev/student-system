@@ -1,0 +1,58 @@
+<p-toast></p-toast>
+
+<div class="container">
+  <p-card class="form-card">
+    <h2>Add New Student</h2>
+
+    <div class="form-grid">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" pInputText [(ngModel)]="student.name" placeholder="Janez Novak" />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" pInputText [(ngModel)]="student.email" placeholder="janez@example.com" />
+      </div>
+
+      <div class="field">
+        <label for="dob">Date of Birth</label>
+        <p-datepicker
+          [(ngModel)]="student.dateOfBirth"
+          [minDate]="minDate"
+          [maxDate]="maxDate"
+          dateFormat="yy-mm-dd"
+        ></p-datepicker>
+      </div>
+
+      <div class="field">
+        <label for="programme">Study Programme</label>
+        <p-select
+          [options]="programmes"
+          [(ngModel)]="student.studyProgramme"
+          placeholder="Select Programme"
+        >
+        </p-select>
+      </div>
+
+      <div class="field">
+        <label for="courses">Courses</label>
+        <p-multiSelect
+          [options]="availableCourses"
+          [(ngModel)]="student.courses"
+          placeholder="Select Courses"
+        ></p-multiSelect>
+      </div>
+
+      <div class="form-actions">
+        <button
+          pButton
+          label="Add Student"
+          icon="pi pi-check"
+          (click)="saveStudent()"
+          [disabled]="isSaving"
+        ></button>
+      </div>
+    </div>
+  </p-card>
+</div>

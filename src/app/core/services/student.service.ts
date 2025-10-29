@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Student } from '../models/student.model';
+import { Student, NewStudent } from '../models/student.model';
 
 @Injectable({ providedIn: 'root' })
 export class StudentService {
@@ -17,7 +17,7 @@ export class StudentService {
     return this.http.get<Student>(`${this.apiUrl}/${id}`);
   }
 
-  add(student: Student): Observable<Student> {
+  add(student: NewStudent): Observable<Student> {
     return this.http.post<Student>(this.apiUrl, student);
   }
 

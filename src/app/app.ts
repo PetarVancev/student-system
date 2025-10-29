@@ -11,5 +11,8 @@ import { ButtonModule } from 'primeng/button';
   styleUrls: ['./app.scss'],
 })
 export class App {
-  items = [{ label: 'Overview', routerLink: '/overview', icon: 'pi pi-table' }];
+  items = [
+    { label: 'Overview', routerLink: '/overview', icon: 'pi pi-table' },
+    { label: 'Add Student', icon: 'pi pi-user-plus', routerLink: '/add' },
+  ];
 }

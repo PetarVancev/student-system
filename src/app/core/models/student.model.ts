@@ -13,3 +13,5 @@ export interface Student {
   courses: string[];
   studyProgramme: StudyProgramme;
 }
+
+export type NewStudent = Omit<Student, 'id'>;
