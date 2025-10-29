@@ -21,8 +21,8 @@ export class StudentService {
     return this.http.post<Student>(this.apiUrl, student);
   }
 
-  update(student: Student): Observable<Student> {
-    return this.http.put<Student>(`${this.apiUrl}/${student.id}`, student);
+  updateCourses(id: number, courses: string[]): Observable<Student> {
+    return this.http.patch<Student>(`${this.apiUrl}/${id}`, { courses });
   }
 
   delete(id: number): Observable<void> {

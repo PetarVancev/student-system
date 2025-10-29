@@ -7,6 +7,8 @@ import { MenuModule } from 'primeng/menu';
 import { StudentService } from '../../core/services/student.service';
 import { Student } from '../../core/models/student.model';
 
+type StudentWithItems = Student & { items: MenuItem[] };
+
 @Component({
   selector: 'app-overview',
   standalone: true,
@@ -26,27 +28,33 @@ export class OverviewComponent implements OnInit {
 
   load() {
     this.studentService.getAll().subscribe((data) => {
-      this.students = data.map((s) => ({ ...s, dateOfBirth: new Date(s.dateOfBirth) }));
+      this.students = data.map((s) => {
+        const st: StudentWithItems = {
+          ...s,
+          dateOfBirth: new Date(s.dateOfBirth),
+          items: [] as MenuItem[],
+        };
+
+        st.items = [
+          {
+            label: 'Edit',
+            icon: 'pi pi-pencil',
+            routerLink: ['/edit', st.id],
+          },
+          {
+            label: 'Delete',
+            icon: 'pi pi-trash',
+            styleClass: 'text-red-500',
+            command: () => this.deleteStudent(st.id),
+          },
+        ];
+
+        return st;
+      });
     });
   }
 
   deleteStudent(id: number) {
     this.studentService.delete(id).subscribe(() => this.load());
-  }
-
-  getMenuItems(student: Student): MenuItem[] {
-    return [
-      // {
-      //   label: 'Edit',
-      //   icon: 'pi pi-pencil',
-      //   command: () => this.editStudent(student.id),
-      // },
-      {
-        label: 'Delete',
-        icon: 'pi pi-trash',
-        styleClass: 'text-red-500',
-        command: () => this.deleteStudent(student.id),
-      },
-    ];
   }
 }

@@ -2,26 +2,39 @@
 
 <div class="container">
   <p-card class="form-card">
-    <h2>Add New Student</h2>
+    <h2>{{ isEditMode ? 'Edit Student' : 'Add New Student' }}</h2>
 
     <div class="form-grid">
       <div class="field">
         <label for="name">Name</label>
-        <input id="name" pInputText [(ngModel)]="student.name" placeholder="Janez Novak" />
+        <input
+          id="name"
+          pInputText
+          [(ngModel)]="student.name"
+          placeholder="Janez Novak"
+          [readonly]="isEditMode"
+        />
       </div>
 
       <div class="field">
         <label for="email">Email</label>
-        <input id="email" pInputText [(ngModel)]="student.email" placeholder="janez@example.com" />
+        <input
+          id="email"
+          pInputText
+          [(ngModel)]="student.email"
+          placeholder="janez@example.com"
+          [readonly]="isEditMode"
+        />
       </div>
 
       <div class="field">
         <label for="dob">Date of Birth</label>
         <p-datepicker
           [(ngModel)]="student.dateOfBirth"
-          [minDate]="minDate"
-          [maxDate]="maxDate"
           dateFormat="yy-mm-dd"
+          [maxDate]="maxDate"
+          [minDate]="minDate"
+          [disabled]="isEditMode"
         ></p-datepicker>
       </div>
 
@@ -31,8 +44,8 @@
           [options]="programmes"
           [(ngModel)]="student.studyProgramme"
           placeholder="Select Programme"
-        >
-        </p-select>
+          [disabled]="isEditMode"
+        ></p-select>
       </div>
 
       <div class="field">
@@ -47,7 +60,7 @@
       <div class="form-actions">
         <button
           pButton
-          label="Add Student"
+          [label]="isEditMode ? 'Update Courses' : 'Add Student'"
           icon="pi pi-check"
           (click)="saveStudent()"
           [disabled]="isSaving"

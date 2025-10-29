@@ -31,3 +31,10 @@ p-card {
 .form-actions {
   text-align: center;
 }
+
+:host ::ng-deep .p-inputtext[readonly],
+:host ::ng-deep input[readonly].p-inputtext {
+  background-color: #e2e8f0 !important;
+  color: #64748b !important;
+  cursor: not-allowed !important;
+}

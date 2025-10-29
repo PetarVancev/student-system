@@ -5,7 +5,11 @@
       "name": "Ana Kovač",
       "email": "ana.kovac@example.com",
       "dateOfBirth": "2002-03-12",
-      "courses": ["Algorithms", "Data Structures", "Operating Systems"],
+      "courses": [
+        "Programming",
+        "Math",
+        "Physics"
+      ],
       "studyProgramme": "Computer Science"
     },
     {
@@ -13,7 +17,10 @@
       "name": "Janez Novak",
       "email": "janez@example.com",
       "dateOfBirth": "2003-09-10",
-      "courses": ["Biology"],
+      "courses": [
+        "Math",
+        "Physics"
+      ],
       "studyProgramme": "Biology"
     },
     {
@@ -21,7 +28,9 @@
       "name": "Maja Horvat",
       "email": "maja.horvat@example.com",
       "dateOfBirth": "2001-11-22",
-      "courses": ["Linear Algebra", "Statistics"],
+      "courses": [
+        "Math"
+      ],
       "studyProgramme": "Mathematics"
     },
     {
@@ -29,7 +38,10 @@
       "name": "Luka Žagar",
       "email": "luka.zagar@example.com",
       "dateOfBirth": "2000-06-08",
-      "courses": ["Quantum Mechanics", "Electromagnetism", "Thermodynamics"],
+      "courses": [
+        "Physics",
+        "Chemistry"
+      ],
       "studyProgramme": "Physics"
     },
     {
@@ -37,7 +49,10 @@
       "name": "Petra Mlakar",
       "email": "petra.mlakar@example.com",
       "dateOfBirth": "2002-02-15",
-      "courses": ["Computer Networks", "Database Systems"],
+      "courses": [
+        "Programming",
+        "AI Fundamentals"
+      ],
       "studyProgramme": "Computer Science"
     },
     {
@@ -45,7 +60,10 @@
       "name": "Nejc Kralj",
       "email": "nejc.kralj@example.com",
       "dateOfBirth": "2001-12-05",
-      "courses": ["Calculus", "Discrete Math", "Number Theory"],
+      "courses": [
+        "Math",
+        "Physics"
+      ],
       "studyProgramme": "Mathematics"
     },
     {
@@ -53,7 +71,10 @@
       "name": "Eva Bizjak",
       "email": "eva.bizjak@example.com",
       "dateOfBirth": "2003-07-19",
-      "courses": ["Microbiology", "Genetics"],
+      "courses": [
+        "Biology",
+        "Chemistry"
+      ],
       "studyProgramme": "Biology"
     },
     {
@@ -61,7 +82,10 @@
       "name": "Marko Potočnik",
       "email": "marko.potocnik@example.com",
       "dateOfBirth": "2000-10-03",
-      "courses": ["Thermodynamics", "Fluid Mechanics"],
+      "courses": [
+        "Physics",
+        "Math"
+      ],
       "studyProgramme": "Engineering"
     },
     {
@@ -69,7 +93,10 @@
       "name": "Tina Medved",
       "email": "tina.medved@example.com",
       "dateOfBirth": "2002-04-18",
-      "courses": ["Web Development", "Software Engineering"],
+      "courses": [
+        "Programming",
+        "AI Fundamentals"
+      ],
       "studyProgramme": "Computer Science"
     },
     {
@@ -77,7 +104,10 @@
       "name": "Rok Božič",
       "email": "rok.bozic@example.com",
       "dateOfBirth": "2001-08-25",
-      "courses": ["Thermodynamics", "Mechanics", "Materials Science"],
+      "courses": [
+        "Physics",
+        "Math"
+      ],
       "studyProgramme": "Engineering"
     },
     {
@@ -85,7 +115,9 @@
       "name": "Nina Zupan",
       "email": "nina.zupan@example.com",
       "dateOfBirth": "2000-01-09",
-      "courses": ["Linear Algebra", "Complex Analysis"],
+      "courses": [
+        "Math"
+      ],
       "studyProgramme": "Mathematics"
     },
     {
@@ -93,7 +125,10 @@
       "name": "Žan Logar",
       "email": "zan.logar@example.com",
       "dateOfBirth": "2003-03-14",
-      "courses": ["Microprocessors", "Electronics", "Control Systems"],
+      "courses": [
+        "Programming",
+        "Physics"
+      ],
       "studyProgramme": "Engineering"
     },
     {
@@ -101,7 +136,10 @@
       "name": "Sara Koren",
       "email": "sara.koren@example.com",
       "dateOfBirth": "2002-06-27",
-      "courses": ["Molecular Biology", "Cell Biology"],
+      "courses": [
+        "Biology",
+        "Chemistry"
+      ],
       "studyProgramme": "Biology"
     },
     {
@@ -109,7 +147,10 @@
       "name": "Andrej Dolinar",
       "email": "andrej.dolinar@example.com",
       "dateOfBirth": "2001-10-02",
-      "courses": ["Software Design", "Artificial Intelligence"],
+      "courses": [
+        "Programming",
+        "AI Fundamentals"
+      ],
       "studyProgramme": "Computer Science"
     },
     {
@@ -117,7 +158,9 @@
       "name": "Klara Vidmar",
       "email": "klara.vidmar@example.com",
       "dateOfBirth": "2002-05-29",
-      "courses": ["Classical Mechanics", "Nuclear Physics"],
+      "courses": [
+        "Physics"
+      ],
       "studyProgramme": "Physics"
     },
     {
@@ -125,7 +168,10 @@
       "name": "Miha Lebar",
       "email": "miha.lebar@example.com",
       "dateOfBirth": "2000-11-30",
-      "courses": ["Advanced Calculus", "Topology"],
+      "courses": [
+        "Math",
+        "Physics"
+      ],
       "studyProgramme": "Mathematics"
     },
     {
@@ -133,7 +179,10 @@
       "name": "Katja Turk",
       "email": "katja.turk@example.com",
       "dateOfBirth": "2001-09-09",
-      "courses": ["Embedded Systems", "Signal Processing"],
+      "courses": [
+        "Programming",
+        "Physics"
+      ],
       "studyProgramme": "Engineering"
     },
     {
@@ -141,7 +190,10 @@
       "name": "Simon Gregorčič",
       "email": "simon.gregorcic@example.com",
       "dateOfBirth": "2002-01-19",
-      "courses": ["Machine Learning", "Databases", "Web Development"],
+      "courses": [
+        "Programming",
+        "AI Fundamentals"
+      ],
       "studyProgramme": "Computer Science"
     },
     {
@@ -149,7 +201,10 @@
       "name": "Ajda Rozman",
       "email": "ajda.rozman@example.com",
       "dateOfBirth": "2003-08-08",
-      "courses": ["Organic Chemistry", "Biochemistry"],
+      "courses": [
+        "Biology",
+        "Chemistry"
+      ],
       "studyProgramme": "Biology"
     },
     {
@@ -157,7 +212,10 @@
       "name": "David Hribar",
       "email": "david.hribar@example.com",
       "dateOfBirth": "2001-02-20",
-      "courses": ["Optics", "Statistical Physics"],
+      "courses": [
+        "Physics",
+        "Math"
+      ],
       "studyProgramme": "Physics"
     },
     {
@@ -165,7 +223,10 @@
       "name": "Hristi Miceski",
       "email": "hristi.miceski@example.com",
       "dateOfBirth": "2001-02-20",
-      "courses": ["Optics", "Statistical Physics"],
+      "courses": [
+        "Physics",
+        "Math"
+      ],
       "studyProgramme": "Physics"
     },
     {
@@ -173,7 +234,10 @@
       "name": "Janez",
       "email": "j@gmail.com",
       "dateOfBirth": "2007-10-28T23:00:00.000Z",
-      "courses": ["Math", "Physics"],
+      "courses": [
+        "Math",
+        "Programming"
+      ],
       "studyProgramme": "Computer Science"
     }
   ]

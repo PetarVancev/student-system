@@ -10,6 +10,13 @@ export const routes: Routes = [
     path: 'add',
     loadComponent: () =>
       import('./pages/student-form/student-form.component').then((m) => m.StudentFormComponent),
+    data: { isEditMode: false },
+  },
+  {
+    path: 'edit/:id',
+    loadComponent: () =>
+      import('./pages/student-form/student-form.component').then((m) => m.StudentFormComponent),
+    data: { isEditMode: true },
   },
   { path: '', redirectTo: 'overview', pathMatch: 'full' },
   { path: '**', redirectTo: 'overview' },
