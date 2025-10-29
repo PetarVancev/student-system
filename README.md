@@ -1,59 +1,56 @@
-# StudentSystem
+# Student System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+A simple Angular application for managing students — view, edit, and delete student records — with a mock backend API powered by json-server.
 
-## Development server
+## Installation
 
-To start a local development server, run:
+Clone the repository and install dependencies:
 
-```bash
-ng serve
+```
+git clone https://github.com/PetarVancev/student-system
+cd student-system
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Running the Application
 
-## Code scaffolding
+To start both the Angular frontend and the mock API server, run:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+npm run dev
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This command:
 
-```bash
-ng generate --help
+- Starts the Angular app on http://localhost:4200
+- Starts the JSON server on http://localhost:3000
+
+## Available Scripts
+
+| Command        | Description                                               |
+| -------------- | --------------------------------------------------------- |
+| npm run dev    | Runs both Angular (ng serve) and JSON server concurrently |
+| npm start      | Runs Angular app only (ng serve)                          |
+| npm run server | Runs the JSON server only                                 |
+| npm run build  | Builds the app for production (outputs to dist/)          |
+| npm test       | Runs unit tests                                           |
+
+## Mock API
+
+The app uses json-server to simulate a REST API.
+
+- Database file: db.json
+- Base URL: http://localhost:3000/students
+
+## Build for Production
+
+To create an optimized production build:
+
+```
+npm run build
 ```
 
-## Building
+## Notes
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- The project uses concurrently to run the backend and frontend together for easy development.
+- Make sure no other process is using ports 3000 or 4200.
